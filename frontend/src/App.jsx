@@ -1,13 +1,15 @@
-// import React, { use, useEffect, useState } from "react";
 import { Navigate, Route, Routes } from "react-router";
+
 import HomePage from "./pages/HomePage.jsx";
 import SignUpPage from "./pages/SignUpPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import NotificationsPage from "./pages/NotificationsPage.jsx";
-import OnboardingPage from "./pages/OnboardingPage.jsx";
 import CallPage from "./pages/CallPage.jsx";
 import ChatPage from "./pages/ChatPage.jsx";
+import OnboardingPage from "./pages/OnboardingPage.jsx";
+
 import { Toaster } from "react-hot-toast";
+
 import PageLoader from "../components/PageLoader.jsx";
 import useAuthUser from "../hooks/useAuthUser.js";
 
@@ -21,13 +23,13 @@ const App = () => {
 
   return (
     <div className="h-screen" data-theme="night">
-      
       <Routes>
         <Route
           path="/"
           element={
             isAuthenticated && isOnboarded ? (
-              <HomePage />
+              
+                <HomePage />
             ) : (
               <Navigate to={!isAuthenticated ? "/login" : "/onboarding"} />
             )
@@ -36,28 +38,20 @@ const App = () => {
         <Route
           path="/signup"
           element={
-            !isAuthenticated ? (
-              <SignUpPage />
-            ) : (
-              <Navigate to={isOnboarded ? "/" : "/onboarding"} />
-            )
+            !isAuthenticated ? <SignUpPage /> : <Navigate to={isOnboarded ? "/" : "/onboarding"} />
           }
         />
         <Route
           path="/login"
           element={
-            !isAuthenticated ? (
-              <LoginPage />
-            ) : (
-              <Navigate to={isOnboarded ? "/" : "/onboarding"} />
-            )
+            !isAuthenticated ? <LoginPage /> : <Navigate to={isOnboarded ? "/" : "/onboarding"} />
           }
         />
         <Route
           path="/notifications"
           element={
             isAuthenticated && isOnboarded ? (
-              <NotificationsPage />
+                <NotificationsPage />
             ) : (
               <Navigate to={!isAuthenticated ? "/login" : "/onboarding"} />
             )
@@ -78,7 +72,7 @@ const App = () => {
           path="/chat/:id"
           element={
             isAuthenticated && isOnboarded ? (
-              <ChatPage />
+                <ChatPage />
             ) : (
               <Navigate to={!isAuthenticated ? "/login" : "/onboarding"} />
             )
@@ -105,5 +99,4 @@ const App = () => {
     </div>
   );
 };
-
 export default App;
