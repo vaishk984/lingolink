@@ -23,10 +23,9 @@ A **real-time language exchange platform** with messaging, video calls, and glob
 
 - **Frontend:** React, TailwindCSS, TanStack Query, Zustand  
 - **Backend:** Node.js, Express.js, MongoDB, Mongoose  
-- **Real-time Communication:** Stream API, WebRTC  
+- **Real-time Communication:** Stream API  
 - **Authentication:** JWT (JSON Web Tokens)  
-- **Deployment:** Vercel (Frontend), Render/Heroku (Backend)
-- 
+- **Deployment:** Render
 ---
 
 ## Getting Started
