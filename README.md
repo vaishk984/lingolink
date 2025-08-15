@@ -77,6 +77,10 @@ npm install
 npm run dev
 ```
 
+## Live Demo
+🔗 **[Visit LingoLink](https://your-deployed-site-link.com)**
+
+
 ## Features
 
 - Private & group chats with instant updates
