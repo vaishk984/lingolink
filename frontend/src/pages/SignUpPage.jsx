@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import { ShipWheelIcon } from "lucide-react";
 import { Link } from "react-router";
-import useSignUp from "../../hooks/useSignUp";
+import useSignUp from "../hooks/useSignUp";
 
 const SignUpPage = () => {
   const [signupData, setSignupData] = useState({
@@ -45,7 +45,7 @@ const SignUpPage = () => {
                 <div>
                   <h2 className="text-xl font-semibold">Create an Account</h2>
                   <p className="text-sm opacity-70">
-                    Join Streamify and start your language learning adventure!
+                    LingoLink: Bridge the world through conversation.
                   </p>
                 </div>
 
@@ -158,11 +158,7 @@ const SignUpPage = () => {
           <div className="max-w-md p-8">
             {/* Illustration */}
             <div className="relative aspect-square max-w-sm mx-auto">
-              <img
-                src="/i.png"
-                alt="Language connection illustration"
-                className="w-full h-full"
-              />
+              <img src="/i.png" alt="" />
             </div>
 
             <div className="text-center space-y-3 mt-6">
