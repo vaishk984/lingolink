@@ -78,7 +78,7 @@ npm run dev
 ```
 
 ## Live Demo
-🔗 **[Visit LingoLink](https://your-deployed-site-link.com)**
+🔗 **[Visit LingoLink](https://lingolink-xk85.onrender.com)**
 
 
 ## Features
