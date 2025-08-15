@@ -33,7 +33,7 @@ A **real-time language exchange platform** with messaging, video calls, and glob
 
 ### 1️. Clone the repository
 ```bash
-git clone https://github.com/your-username/lingolink.git
+git clone https://github.com/vaishk984/lingolink.git
 cd lingolink
 ```
 
